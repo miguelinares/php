@@ -1,7 +1,7 @@
 <?php
 	$utilisateur = 'ldap1'; //sn
 
-    //Asigner variables pour accéder au serveur LDAP
+    //Asigner variables pour accï¿½der au serveur LDAP
     $host = "192.168.142.146";
     $user = "cn=Administrator,dc=Redes";
     $pswd = "miguel";
@@ -13,7 +13,7 @@
     ldap_set_option($ad, LDAP_OPT_PROTOCOL_VERSION, 3)
     or die ("Erreur dans l'asignation du Protocole LDAP");
 
-    // credentialles pour accèder au serveur LDAP
+    // credentialles pour accï¿½der au serveur LDAP
     $bd = ldap_bind($ad, $user, $pswd)
     or die ("Imposible valider au serveur LDAP");
 
